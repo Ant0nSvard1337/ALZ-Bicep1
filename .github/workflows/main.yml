@@ -23,4 +23,4 @@ jobs:
     - name: Build and deploy
       run: |
         bicep build ./azuredeploy.bicep
-        az deployment group create --resource-group YOUR_RESOURCE_GROUP --template-file ./azuredeploy.json --parameters @./azuredeploy.parameters.json
+        az deployment group create --resource-group SwedenCentralALZTest --template-file ./azuredeploy.json --parameters @./azuredeploy.parameters.json
